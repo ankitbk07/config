@@ -27,9 +27,9 @@ vim.lsp.start({
 		--local key = vim.keycode('<C-o>c')
 		--vim.api.nvim_feedkeys(key, 'm', false)
 		--end
-		--end
-			--})
+		--end--})
 
+-- this triggers autocomplete
 vim.api.nvim_create_autocmd('TextChangedI', {
   buffer = vim.api.nvim_get_current_buf(),
   callback = function()
